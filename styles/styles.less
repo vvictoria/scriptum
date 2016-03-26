@@ -12,12 +12,15 @@
 body {
 	width: 1920px;
 	height: 8531px;
+	letter-spacing: 2px;
 	a {
 		text-decoration: none;
 		color: 000;
 	}
 	h1 {
 		font-size: 42px;
+		margin-top: 0;
+		margin-bottom: 0;
 	}
 	p {
 		font-size: 15px;
@@ -40,10 +43,19 @@ body {
 		background: linear-gradient(to left, #FFF, #F3F3F3);
 	}
 	.width-80 {
-		// width: 1270px;
+		width: 1270px;
+		margin: 0 auto;
+		padding-top: 133px;
+		padding-bottom: 133px;
+	}
+	.width-80-smaller {
+		width: 1270px;
+		margin: 0 auto;
+		padding-top: 49px;
+		padding-bottom: 49px;
 	}
 	.width-60 {
-		width: 964px;
+		padding: 132px 443px 155px; 
 	}
 	.width-half {
 		height: 800px;
@@ -51,8 +63,11 @@ body {
 	}
 }
 
-h1, .text-shadow {
-	text-shadow: 10px 10px 0 #EEE;
+h1 {
+	text-shadow: 15px 15px 30px #A9A9A9;
+}
+.text-shadow, .skills, .learn {
+	text-shadow: 10px 10px 10px #A9A9A9;
 }
 h1, a, .about__text p.baron,.works, .development__menu, .skills, .mobile p.baron, .text-name, .quotes__text, .bottom {
 	color: #1A2730;
@@ -67,12 +82,51 @@ h1, a, .about__text p.baron,.works, .development__menu, .skills, .mobile p.baron
 .top, .about, .works, .development, .skills, .mobile, .news, .quotes, .contact {
 	margin-bottom: 32px;
 }
-.works, .skills h1, .news h1, .contact h1 {
+.works, h1 {
 	text-align: center;
 }
-.about .width-80, .works .width-80, .skills .width-80, .news .width-80 {
-	margin: 0 auto;
-	padding: 133px 290px;
+
+.inline-block {
+	display: inline-block;
+}
+.on-the-top {
+	color: white;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	position: absolute;
+	text-align: center;
+	display: flex;
+	p {
+		font-size: 55px;
+		vertical-align: middle;
+		margin: auto;
+		position: relative;
+		padding: 24px 31px 30px 26px;
+		&:before, &:after {
+			content: '';
+			border: 2px solid white;
+			position: absolute;
+			top: -4px;
+			left: -4px;
+			bottom: 4px;
+			right: 4px;
+		}
+		&:after {
+			top: 4px;
+			left: 4px;
+			bottom: -4px;
+			right: -4px;
+		}
+	}
+	.another {
+		padding: 201px 49px 177px 47px;
+		line-height: 1.5;
+	}
+}
+.development__picture, .quotes__picture {
+	position: relative;
 }
 
 
@@ -104,6 +158,18 @@ h1, a, .about__text p.baron,.works, .development__menu, .skills, .mobile p.baron
 }
 .about__text {
 	margin-left: 23px;
+	h1 {
+		margin-top: 57px;
+		margin-bottom: 50px;
+		text-align: left;
+	}
+	p {
+		margin: 0;
+		text-align: justify;
+	}
+	p.baron {
+		margin-top: 49px;
+	}
 }
 
 						/* WORKS SECTION */
@@ -118,6 +184,17 @@ h1, a, .about__text p.baron,.works, .development__menu, .skills, .mobile p.baron
 		> img {
 			display: block;
 			margin-bottom: 24px;
+		}
+	}
+}
+.works__bookmarks {
+	font-size: 14px;
+	margin-top: 57px;
+	margin-bottom: 57px;
+	a {
+		margin-right: 30px;
+		&:hover {
+			border-bottom: 2px solid #1A2632;
 		}
 	}
 }
@@ -136,6 +213,15 @@ h1, a, .about__text p.baron,.works, .development__menu, .skills, .mobile p.baron
 
 
 						/* SKILLS SECTION*/
+.skills {
+	h1 {
+		margin-bottom: 27px;
+	}
+	p {
+		margin-top: 52px;
+		margin-bottom: 34px;
+	}
+}
 .skills__line {
 	background-color: #F3F3F3;
 	height: 34px;
@@ -146,6 +232,10 @@ h1, a, .about__text p.baron,.works, .development__menu, .skills, .mobile p.baron
 	background-color: black;
 	float: left;
 	color: white;
+	height: 34px;
+	line-height: 34px;
+	text-align: right;
+	padding-right: 15px;
 }
 .line__95 {
 	width: 95%;
@@ -158,41 +248,103 @@ h1, a, .about__text p.baron,.works, .development__menu, .skills, .mobile p.baron
 }
 
 						/* MOBILE SECTION*/
-
+.mobile__picture {
+	margin-top: 150px;
+	margin-top: 150px;
+}
+.mobile__text {
+	margin-top: 218px;
+}
 
 						/* NEWS SECTION*/
-.new__blocks {
-	width: 1270px;
-}
-.news__block {
-	width: 407px;
-	justify-content: space-between;
+.news {
+	h1 {
+		margin-bottom: 79px;
+	}
+	.news__blocks {
+		width: 1270px;
+		justify-content: space-between;
+	}
+	.news__block {
+		width: 407px;
+	}
+	.text-name {
+		margin-top: 4px;
+		margin-bottom: 0px;
+	}
+	.text-story {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	.learn {
+		margin-top: 38px;
+	}
 }
 
 
 						/* QUOTES SECTION*/
+.quotes {
+	background-image: url(../images/quotes_bg.png);
+}
 .quotes__text p {
 	font-weight: bold;
 	font-size: 20px;
 	text-align: center;
+	vertical-align: middle;
 }
 
 						/* CONTACT SECTION*/
 .contact {
 	height: 1064px;
+	h1 {
+		margin-top: 0;
+		margin-bottom: 132px;
+	}
 }
-
+form {
+	font-size: 0;
+}
+.input-background, [type="button"] {
+	font-size: 14px;
+	margin-bottom: 24px;
+	background-color: #EFEFEF;
+	border-style: none;
+	color: #C0C0C0;
+	padding-left: 34px;
+}
+[type="button"] {
+	background-color: transparent;
+	margin-top: 45px;
+}
 .input-name, .input-surname {
 	width: 468px;
 	height: 66px;
 }
-.input-email, .input-background {
+.input-surname {
+	float: right;
+}
+.input-email {
+	height: 66px;
+}
+.input-message {
+	height: 365px;
+}
+.input-email, .input-message {
 	width: 100%;
 }
 
 						/* BOTTOM SECTION*/
 .bottom {
 	height: 137px;
+	.bottom__arrow {
+		height: 44px;
+		width: 39px;
+		background-color: #1A2632;
+		float: right;
+	}
+	.social-net {
+		margin-right: 18px;
+	}
 }
 
 
