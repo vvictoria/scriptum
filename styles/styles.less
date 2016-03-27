@@ -31,7 +31,7 @@ h1 {
 	margin-bottom: 0;
 }
 p {
-	font-size: 14pt;
+	font-size: 14px;
 	line-height: 1.5;
 }
 .base {
@@ -46,6 +46,7 @@ p {
 .responsive {
 	height: auto;
 	width: 100%;
+    display: block;
 }
 .shadow {
 	background: linear-gradient(to left, #FFF, @bg-main-color);
@@ -63,20 +64,27 @@ p {
 	padding-bottom: 2.55%;
 }
 .width-60 {
-	padding: 132px 23.07% 155px; 
+	padding: 132px 0 155px; 
+    max-width: 800px;
+    margin: 0 auto;
+
 }
 .width-half {
 	height: 41.67%;
 	width: 48.17%;
 }
 .size-15 {
-	font-size: 15pt;
+	font-size: 15px;
 }
 .size-14 {
-	font-size: 14pt;
+	font-size: 14px;
 }
 .size-13 {
-	font-size: 13pt;
+	font-size: 13px;
+}
+.learn {
+    display: inline-block;
+    margin-top: 48px;
 }
 
 h1 {
@@ -88,6 +96,21 @@ h1 {
 h1, a, .about__text p.baron,.works, .development__menu, .skills, .mobile p.baron, .text-name, .quotes__text, .bottom {
 	color: #1A2730;
 }
+
+a {
+    transition: all 0.1s ease-out;
+
+    &:link, &:active, &:visited {
+        color: #1A2730;
+        border-bottom: 2px solid transparent;
+    }
+
+    &:hover {
+        color: #47586C;
+        border-bottom: 2px solid #47586C;
+    }
+}
+
 .flex {
 	display: flex;
 }
@@ -117,7 +140,7 @@ h1, a, .about__text p.baron,.works, .development__menu, .skills, .mobile p.baron
 	text-align: center;
 	display: flex;
 	p {
-		font-size: 3.6vw;
+		font-size: 3.385vw;
 		vertical-align: middle;
 		margin: auto;
 		position: relative;
@@ -208,7 +231,7 @@ h1, a, .about__text p.baron,.works, .development__menu, .skills, .mobile p.baron
 	}
 }
 .works__bookmarks {
-	font-size: 12pt;
+	font-size: 12px;
 	margin-top: 57px;
 	margin-bottom: 57px;
 	a {
@@ -226,7 +249,7 @@ h1, a, .about__text p.baron,.works, .development__menu, .skills, .mobile p.baron
     &__menu {
     	margin: auto;
     	.dev__menu__col-left, .dev__menu__col-right {
-    		width: 50%;
+    		width: 49.5%;
     	}
     	.dev__menu__col-left {
     		padding-left: 16.6%;
@@ -236,6 +259,9 @@ h1, a, .about__text p.baron,.works, .development__menu, .skills, .mobile p.baron
     		padding-right: 16.6%;
     		text-align: center;
     	}
+        .dev__menu__item:not(:first-child) {
+            margin-top: 82px;
+        }
     }
 }
 
@@ -350,12 +376,38 @@ h1, a, .about__text p.baron,.works, .development__menu, .skills, .mobile p.baron
 						/* QUOTES SECTION*/
 .quotes {
 	background-image: url(../images/quotes_bg.png);
+    text-align: center;
+
+    &__text, &__picture {
+        margin: auto;
+    }
 	&__text p {
+        padding: 0 20%;
 		font-weight: bold;
-		font-size: 1.45vw;
+		font-size: 1.09vw;
 		text-align: center;
 		vertical-align: middle;
 	}
+    &__pin {
+        display: inline-block;
+        margin-bottom: 93px;
+    }
+
+    &__dots {
+        margin-top: 115px;
+
+        &__dot {
+            display: inline-block;
+            margin: 16px;
+            width: 8px;
+            height: 8px;
+            background-color: #DCDCDC;
+
+            &.active {
+                background-color: #010101;
+            }
+        }
+    }
 }
 
 
@@ -372,7 +424,7 @@ form {
 	autocomplete: off;
 	/*width: 964px*/
 	.input-background, [type="button"] {
-		font-size: 14pt;
+		font-size: 14px;
 		margin-bottom: 24px;
 		background-color: #EFEFEF;
 		border-style: none;
@@ -421,15 +473,53 @@ form {
 
 
 @media screen and (max-width: 960px) {
-	.size-15 {
-		font-size: 1.4vw;
-	}
-	.size-14 {
-		font-size: 1.4vw;
-	}
-	.size-13 {
-		font-size: 1.4vw;
-	}
+    .width-half {
+        width: 100%;
+    }
+
+    .about__text, .about__picture {
+        padding: 0;
+        h1 {
+            margin-top: 32px;
+        }
+        width: 100%;
+    }
+
+    .development {
+        display: block;
+
+        &__menu {
+            margin-top: 64px;
+        }
+    }
+
+    .mobile {
+        &__text, &__picture {
+            width: 100%;
+            padding: 32px 0;
+        }
+    }
+
+    .news__blocks {
+        display: block;
+    }
+
+    .news__block {
+        width: 100%;
+        padding: 0 16px;
+    }
+
+    .quotes {
+        display: block;
+
+        &__text p {
+            font-size: 21px;
+        }
+    }
+
+    .top__logo, .top__menu {
+        width: 40px;
+    }
 }
 
 @media screen and (max-width: 480px) {
