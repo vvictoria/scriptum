@@ -10,23 +10,17 @@
 <body>
 	<div class="base">
 		<div class="frame">
-			<div class="row">
-		<div class="s12 m6 l4 xl2 col">Author</div>
-		<div class="s12 m6 l8 xl10 col">Comment</div>
-	</div>
-
-
 			<div class="top">
 				<img class="top__background responsive" src="images/title.jpg"/>
 				<img class="top__logo" src="images/title_logo.png" alt="logo">
 				<img class="top__menu" src="images/title_menu.png" alt="menu">
 			</div>
-			<div class="about shadow">
+			<div class="about shadow row">
 				<div class="width-80">
-					<div class="about__picture">
+					<div class="about__picture inline-block">
 						<img class="responsive" src="images/about.jpg" alt="view">
 					</div>
-					<div class="about__text">
+					<div class="about__text inline-block">
 						<h1 class="baron">about scriptum</h1>
 						<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content here, content here’, making it look like readable English. Many desktop publishing packages and web page editors.</p>
 						<p class="baron learn">learn more</p>
@@ -43,55 +37,59 @@
 						<a href="#">brand</a>
 						<a href="#">art</a>
 					</div>
-					<div class="works_pictures">
+					<div class="works_pictures flex">
 						<div class="column">
-							<img src="images/works_1.jpg" alt="" class="responsive">
-							<img src="images/works_2.jpg" alt="" class="responsive">
-							<img src="images/works_3.jpg" alt="" class="responsive">
+							<img src="images/works_1.jpg" alt="witer nature" class="responsive">
+							<img src="images/works_2.jpg" alt="witer nature" class="responsive">
+							<img src="images/works_3.jpg" alt="witer nature" class="responsive">
 						</div>
 						<div class="column">
-							<img src="images/works_4.jpg" alt="" class="responsive">
-							<img src="images/works_5.jpg" alt="" class="responsive">
-							<img src="images/works_6.jpg" alt="" class="responsive">
+							<img src="images/works_4.jpg" alt="witer nature" class="responsive">
+							<img src="images/works_5.jpg" alt="witer nature" class="responsive">
+							<img src="images/works_6.jpg" alt="witer nature" class="responsive">
 						</div>
 						<div class="column">
-							<img src="images/works_7.jpg" alt="" class="responsive">
-							<img src="images/works_8.jpg" alt="" class="responsive">
+							<img src="images/works_7.jpg" alt="witer nature" class="responsive">
+							<img src="images/works_8.jpg" alt="witer nature" class="responsive">
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="development baron">
-				<div class="development__picture width-half">
-					<img class="responsive" src="images/development.jpg" alt="">
+			<div class="development baron flex">
+				<div class="development__picture width-half flex-1">
+					<img class="responsive" src="images/development.jpg" alt="ice">
 					<div class="on-the-top">
 						<p class="on-the-top__text">web development</p>
 					</div>
 				</div>
-				<div class="development__menu width-half text-shadow">
-					<div class="dev__menu__item">
-						<img src="images/dev_design.png" alt="">
-						<p>design</p>
+				<div class="development__menu width-half text-shadow row flex-1">
+					<div class="dev__menu__col-left inline-block">
+						<div class="dev__menu__item">
+							<img src="images/dev_design.png" alt="sign">
+							<p>design</p>
+						</div>
+						<div class="dev__menu__item">
+							<img src="images/dev_communication.png" alt="sign">
+							<p>communication</p>
+						</div>
+						<div class="dev__menu__item">
+							<img src="images/dev_coordination.png" alt="sign">
+							<p>coordination</p>
+						</div>
 					</div>
-					<div class="dev__menu__item">
-						<img src="images/dev_communication.png" alt="sign">
-						<p>communication</p>
-					</div>
-					<div class="dev__menu__item">
-						<img src="images/dev_coordination.png" alt="sign">
-						<p>coordination</p>
-					</div>
-					<div class="dev__menu__item">
-						<img src="images/dev_night-work.png" alt="sign">
-						<p>night work</p>
-					</div>
-					<div class="dev__menu__item">
-						<img src="images/dev_safety.png" alt="sign">
-						<p>safety</p>
-					</div>
-					<div class="dev__menu__item">
-						<img src="images/dev_development.png" alt="sign">
-						<p>development</p>
+					<div class="dev__menu__col-right inline-block">
+						<div class="dev__menu__item">
+							<img src="images/dev_night-work.png" alt="sign">
+							<p>night work</p>
+						</div>
+						<div class="dev__menu__item">
+							<img src="images/dev_safety.png" alt="sign">
+							<p>safety</p>
+						</div>
+						<div class="dev__menu__item">
+							<img src="images/dev_development.png" alt="sign">
+							<p>development</p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -113,11 +111,11 @@
 				</div>	
 			</div>
 			<div class="mobile">
-				<div class="mobile__width">
-					<div class="mobile__text">
+				<div class="width-80 row">
+					<div class="mobile__text inline-block">
 						<div class="first-part table">
 							<div class="cell-picture">
-								<img src="images/mob_beautiful.png" alt="">
+								<img src="images/mob_beautiful.png" alt="icon">
 							</div>
 							<div class="cell-description">
 								<p class="baron">beautiful photos</p>
@@ -127,7 +125,7 @@
 						<br/><br/>
 						<div class="second-part table">
 							<div class="cell-picture">
-								<img src="images/mob_full.png" alt="">
+								<img src="images/mob_full.png" alt="icon">
 							</div>
 							<div class="cell-description">
 								<p class="baron">full responsive</p>
@@ -135,17 +133,17 @@
 							</div>
 						</div>
 					</div>
-					<div class="mobile__picture">
+					<div class="mobile__picture inline-block">
 						<img class="responsive" src="images/mobile.png" alt="phone"/>
 					</div>
-					<div class="mobile__text">
+					<div class="mobile__text inline-block">
 						<div class="third-part table">
 							<div class="cell-description">
 								<p class="baron">retina ready</p>
 								<p>Proin vitae quam mollis diam faucibus porta henderit vitae diam. Aenean cursus massa quis sem dictum convallis. Morbi ornare rutrum tellus, eu dapibus magna iaculis dictum. Nam nibh arcu.</p>
 							</div>
 							<div class="cell-picture">
-								<img src="images/mob_retina.png" alt="">
+								<img src="images/mob_retina.png" alt="icon">
 							</div>
 						</div>
 							<br/><br/>
@@ -155,7 +153,7 @@
 								<p>Sed a ipsum molestie, pellentesque fellis at, vestibulum nunc. Aenean eu tristique elit. Vivamus ullamcorper id ante nec condimentum. In eleifend convallis ante in semper. Nam vitae com.</p>
 							</div>
 							<div class="cell-picture">
-								<img src="images/mob_crafted.png" alt="">
+								<img src="images/mob_crafted.png" alt="icon">
 							</div>
 						</div>
 					</div>
@@ -164,32 +162,32 @@
 			<div class="news shadow">
 				<div class="width-80">
 					<h1 class="baron">news</h1>
-					<div class="news__blocks">
+					<div class="news__blocks flex">
 						<div class="news__block">
-							<img class="responsive" src="images/news_1.jpg" alt=""/>
-							<img src="images/news_pencil.png" alt="">
+							<img class="responsive" src="images/news_1.jpg" alt="mountains"/>
+							<img src="images/news_pencil.png" alt="pencil">
 							<p class="inline-block">Stone clad</p>
-							<img src="images/news_calendar.png" alt="">
+							<img src="images/news_calendar.png" alt="calendar">
 							<p class="inline-block">27.01.2017</p>
 							<p class="text-name baron">maecenas consequat turpis at atne</p>
 							<p class="text-story">It is a long established fact that a reader will be distracted.</p>
 							<p class="text-more baron learn">learn more</p>
 						</div>
 						<div class="news__block">
-							<img class="responsive" src="images/news_2.jpg" alt=""/>
-							<img src="images/news_pencil.png" alt="">
+							<img class="responsive" src="images/news_2.jpg" alt="trees"/>
+							<img src="images/news_pencil.png" alt="pencil">
 							<p class="inline-block">Stone clad</p>
-							<img src="images/news_calendar.png" alt="">
+							<img src="images/news_calendar.png" alt="calendar">
 							<p class="inline-block">27.01.2017</p>
 							<p class="text-name baron">maecenas consequat turpis at atne</p>
 							<p class="text-story">It is a long established fact that a reader will be distracted.</p>
 							<p class="text-more baron learn">learn more</p>
 						</div>
 						<div class="news__block">
-							<img class="responsive" src="images/news_3.jpg" alt=""/>
-							<img src="images/news_pencil.png" alt="">
+							<img class="responsive" src="images/news_3.jpg" alt="lake"/>
+							<img src="images/news_pencil.png" alt="pencil">
 							<p class="inline-block">Stone clad</p>
-							<img src="images/news_calendar.png" alt="">
+							<img src="images/news_calendar.png" alt="calendar">
 							<p class="inline-block">27.01.2017</p>
 							<p class="text-name baron">maecenas consequat turpis at atne</p>
 							<p class="text-story">It is a long established fact that a reader will be distracted.</p>
@@ -198,14 +196,14 @@
 					</div>
 				</div>
 			</div>
-			<div class="quotes">
-				<div class="quotes__text width-half">
+			<div class="quotes flex">
+				<div class="quotes__text width-half flex-1">
 					<p>Wroin dapibus nunc eget porta, vulputate consectetur. Donec non eleifend sem. Integer eleifend tellus. Fusce quis ullamcorper, pretium nibh undo leo vel.</p>
 					<div class="quotes__pages">
 					</div>
 				</div>
-				<div class="quotes__picture width-half baron">
-					<img class="responsive" src="images/quotes.jpg" alt="">
+				<div class="quotes__picture width-half baron flex-1">
+					<img class="responsive" src="images/quotes.jpg" alt="forest">
 					<div class="on-the-top">
 						<p class="on-the-top__text another">quotes from<br/>east north<br/>clients</p>
 					</div>
@@ -215,10 +213,10 @@
 				<div class="width-60">
 					<h1>contact us</h1>
 					<form>
-						<input type="text" class="input-background input-name inline-block" value="*name"/>
-						<input type="text" class="input-background input-surname inline-block" value="*surname"/>
-						<input type="text" class="input-background input-email" value="*email"/>
-						<textarea value="MESSAGE" class="input-background input-message"></textarea>
+						<input type="text" class="input-background input-name inline-block" value="" placeholder="*name"/>
+						<input type="text" class="input-background input-surname inline-block" value="" placeholder="*surname"/>
+						<input type="text" class="input-background input-email" value="" placeholder="*email"/>
+						<textarea value="" placeholder="message" class="input-background input-message"></textarea>
 						<input type="button" value="send"/>
 					</form>
 
