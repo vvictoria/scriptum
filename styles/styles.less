@@ -72,7 +72,7 @@ h1 {
 h1, a, .about__text p.baron,.works, .development__menu, .skills, .mobile p.baron, .text-name, .quotes__text, .bottom {
 	color: #1A2730;
 }
-.about .width-80, .works_pictures, .development, .mobile .width-unknown, .news__blocks, .quotes {
+.about .width-80, .works_pictures, .development, .mobile__width, .news__blocks, .quotes {
 	display: flex;
 }
 .about__picture, .about__text, .development__picture, .development__menu, .quotes__text, .quotes__picture {
@@ -248,12 +248,48 @@ h1, a, .about__text p.baron,.works, .development__menu, .skills, .mobile p.baron
 }
 
 						/* MOBILE SECTION*/
+.mobile__width {
+	margin: auto;
+	width: 1148px;
+}
 .mobile__picture {
 	margin-top: 150px;
 	margin-top: 150px;
 }
 .mobile__text {
 	margin-top: 218px;
+	width: 400px;
+}
+.table {
+	display: table;
+	width: 100%;
+}
+.cell-description, .cell-picture {
+	display: table-cell;
+	vertical-align: top;
+}
+.cell-picture {
+	width: 0;
+}
+.cell-description {
+	width: 100%;
+	vertical-align: top;
+	p {
+		margin: 0;
+	}
+}
+.first-part, .second-part {
+	.cell-description {
+		padding-left: 30px;
+	}
+}
+.third-part, .forth-part {
+	p {
+		text-align: right;
+	}
+	.cell-description {
+		padding-right: 30px;
+	}
 }
 
 						/* NEWS SECTION*/
@@ -337,9 +373,9 @@ form {
 .bottom {
 	height: 137px;
 	.bottom__arrow {
-		height: 44px;
-		width: 39px;
-		background-color: #1A2632;
+		height: 39px;
+		width: 44px;
+		background-image: url(../images/arrow-up.jpg);
 		float: right;
 	}
 	.social-net {
