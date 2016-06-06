@@ -224,9 +224,8 @@ a {
 	justify-content: space-between;
 	> .column {
 		width: 32.05%; /* 407px */
-		> img {
+		img {
 			display: block;
-			margin-bottom: 6.15%;
 		}
 	}
 }
@@ -289,13 +288,13 @@ a {
 			padding-right: 15px;
 		}
 		.line__95 {
-			width: 95%;
+			width: 0%;
 		}
 		.line__85 {
-			width: 85%;
+			width: 0%;
 		}
 		.line__80 {
-			width: 80%;
+			width: 0%;
 		}
 	}
 
@@ -402,6 +401,7 @@ a {
             width: 8px;
             height: 8px;
             background-color: #DCDCDC;
+            cursor: pointer;
 
             &.active {
                 background-color: #010101;
@@ -524,4 +524,121 @@ form {
 
 @media screen and (max-width: 480px) {
 
+}
+
+.info-on-hover {
+    position: relative;
+    overflow-y: hidden;
+    margin-bottom: 6.15%;
+
+    .hover-info {
+        position: absolute;
+        font-size: 24px;
+        padding: 15px 15px;
+        bottom: -100%;
+        left: 0;
+        right: 0;
+        text-align: left;
+        color: #FFF;
+        background: rgba(0, 0, 0, 0);
+        transition: bottom 0.3s ease-out, background 1s ease-out;
+
+        .likes {
+            float: right;
+            margin-top: 7px;
+            font-size: 14px;
+            font-weight: 900;
+        }
+    }
+
+    &:hover {
+        .hover-info {
+            bottom: 0%;
+            background: rgba(0, 0, 0, 0.6);
+        }
+    }
+}
+
+.side__menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    bottom: 0;
+    width: 25%;
+    min-width: 300px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    transition: right 0.2s ease-out;
+    z-index: 10;
+    background-color: rgba(20, 33, 49, 0.8);
+    a {
+        color: white;
+        text-shadow: 2px 2px 2px black;
+    }
+
+    &.visible {
+        right: 0;
+    }
+
+    .close {
+        float: right;
+        cursor: pointer;
+        font-size: 48px;
+        color: white;
+    }
+
+    &__item {
+        padding: 15px 15px 0;
+        > a {
+            display: inline-block;
+        }
+    }
+}
+
+.underline {
+ 
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  overflow: hidden;
+}
+.underline:before {
+  content: "";
+  position: absolute;
+  z-index: 100000;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  // background: red;
+  height: 4px;
+  -webkit-transition-property: "left, right";
+  transition-property: "left, right";
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.underline:hover:before,
+.underline:focus:before,
+.underline:active:before {
+  left: 0;
+  right: 0;
+}
+.underline:before {
+  background: #FFF;
+  height: 2px;
+}
+a.underline:hover {
+    border-bottom-color: transparent;
+}
+p.underline:before {
+  background: #222;
+}
+p.underline:hover:before {
+    left: 25%;
+    right: 25%;
 }

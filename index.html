@@ -2,10 +2,15 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Scriptum</title>
 	<link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet/less" type="text/css"  href="styles/styles.less">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+	<script src="sss/sss.js"></script>
+	<link rel="stylesheet" href="sss/sss.css" type="text/css" media="all">
 	<script src="js/less.js" type="text/javascript"></script>
+	<script src="js/jquery.appear.js" type="text/javascript"></script>
 </head>
 <body>
 	<div class="base">
@@ -15,7 +20,7 @@
 				<img class="top__logo" src="images/title_logo.png" alt="logo">
 				<img class="top__menu" src="images/title_menu.png" alt="menu">
 			</div>
-			<div class="about shadow row">
+			<div class="about shadow row fading">
 				<div class="width-80">
 					<div class="about__picture inline-block">
 						<img class="responsive" src="images/about.jpg" alt="view">
@@ -28,7 +33,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="works shadow">
+			<div class="works shadow fading">
 				<div class="width-80">
 					<h1 class="baron">works</h1>
 					<div class="works__bookmarks baron size-12">
@@ -40,23 +45,68 @@
 					</div>
 					<div class="works_pictures flex">
 						<div class="column">
-							<img src="images/works_1.jpg" alt="witer nature" class="responsive">
-							<img src="images/works_2.jpg" alt="witer nature" class="responsive">
-							<img src="images/works_3.jpg" alt="witer nature" class="responsive">
+							<div class="info-on-hover">
+								<div class="hover-info">
+									Nice image
+									<div class="likes">&hearts; 1337</div>
+								</div>
+								<img src="images/works_1.jpg" alt="witer nature" class="responsive">
+							</div>
+							<div class="info-on-hover">
+								<div class="hover-info">
+									Nice image
+									<div class="likes">&hearts; 1337</div>
+								</div>
+								<img src="images/works_2.jpg" alt="witer nature" class="responsive">
+							</div>
+							<div class="info-on-hover">
+								<div class="hover-info">
+									Nice image
+									<div class="likes">&hearts; 1337</div>
+								</div>
+								<img src="images/works_3.jpg" alt="witer nature" class="responsive">
+							</div>
 						</div>
 						<div class="column">
-							<img src="images/works_4.jpg" alt="witer nature" class="responsive">
-							<img src="images/works_5.jpg" alt="witer nature" class="responsive">
-							<img src="images/works_6.jpg" alt="witer nature" class="responsive">
+							<div class="info-on-hover">
+								<div class="hover-info">
+									Nice image
+									<div class="likes">&hearts; 1337</div>
+								</div>
+								<img src="images/works_4.jpg" alt="witer nature" class="responsive">
+							</div>
+							<div class="info-on-hover">
+								<div class="hover-info">
+									Nice image
+									<div class="likes">&hearts; 1337</div>
+								</div>
+								<img src="images/works_5.jpg" alt="witer nature" class="responsive">
+							</div>
+							<div class="info-on-hover">
+								<div class="hover-info">Nice image</div>
+								<img src="images/works_6.jpg" alt="witer nature" class="responsive">
+							</div>
 						</div>
 						<div class="column">
-							<img src="images/works_7.jpg" alt="witer nature" class="responsive">
-							<img src="images/works_8.jpg" alt="witer nature" class="responsive">
+							<div class="info-on-hover">
+								<div class="hover-info">
+									Nice image
+									<div class="likes">&hearts; 1337</div>
+								</div>
+								<img src="images/works_7.jpg" alt="witer nature" class="responsive">
+							</div>
+							<div class="info-on-hover">
+								<div class="hover-info">
+									Nice image
+									<div class="likes">&hearts; 1337</div>
+								</div>
+								<img src="images/works_8.jpg" alt="witer nature" class="responsive">
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="development baron flex">
+			<div class="development baron flex fading">
 				<div class="development__picture width-half flex-1">
 					<img class="responsive" src="images/development.jpg" alt="ice">
 					<div class="on-the-top">
@@ -67,34 +117,34 @@
 					<div class="dev__menu__col-left inline-block">
 						<div class="dev__menu__item">
 							<img src="images/dev_design.png" alt="sign">
-							<p>design</p>
+							<p class="underline">design</p>
 						</div>
 						<div class="dev__menu__item">
 							<img src="images/dev_communication.png" alt="sign">
-							<p>communication</p>
+							<p class="underline">communication</p>
 						</div>
 						<div class="dev__menu__item">
 							<img src="images/dev_coordination.png" alt="sign">
-							<p>coordination</p>
+							<p class="underline">coordination</p>
 						</div>
 					</div>
 					<div class="dev__menu__col-right inline-block">
 						<div class="dev__menu__item">
 							<img src="images/dev_night-work.png" alt="sign">
-							<p>night work</p>
+							<p class="underline">night work</p>
 						</div>
 						<div class="dev__menu__item">
 							<img src="images/dev_safety.png" alt="sign">
-							<p>safety</p>
+							<p class="underline">safety</p>
 						</div>
 						<div class="dev__menu__item">
 							<img src="images/dev_development.png" alt="sign">
-							<p>development</p>
+							<p class="underline">development</p>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="skills shadow baron">
+			<div class="skills shadow baron fading">
 				<div class="width-80">
 					<h1>skills</h1>
 					<p class="text-shadow size-14">design</p>
@@ -111,7 +161,7 @@
 					</div>
 				</div>	
 			</div>
-			<div class="mobile">
+			<div class="mobile fading">
 				<div class="width-80 row">
 					<div class="mobile__text inline-block">
 						<div class="first-part table">
@@ -160,7 +210,7 @@
 					</div>
 				</div>				
 			</div>
-			<div class="news shadow">
+			<div class="news shadow fading">
 				<div class="width-80">
 					<h1 class="baron">news</h1>
 					<div class="news__blocks flex">
@@ -197,10 +247,15 @@
 					</div>
 				</div>
 			</div>
-			<div class="quotes flex">
-				<div class="quotes__text width-half flex-1">
+			<div class="quotes flex fading">
+				<div class="quotes__text width-half flex-1>
                     <img class="quotes__pin" src="images/quote.png" />
-					<p>Wroin dapibus nunc eget porta, vulputate consectetur. Donec non eleifend sem. Integer eleifend tellus. Fusce quis ullamcorper, pretium nibh undo leo vel.</p>
+                    <div class="slider">
+						<p>Wroin dapibus nunc eget porta, vulputate consectetur. Donec non eleifend sem. Integer eleifend tellus. Fusce quis ullamcorper, pretium nibh undo leo vel.</p>
+						<p>Quis magna pellentesque id. Gravida bibendum ut, mollis lobortis egestas dictumst lorem. Amet nam, non quis nam consectetuer ullamcorper, malesuada a sollicitudin erat.</p>
+						<p>Dictum vestibulum nostra vitae in, tincidunt tellus, mauris sed dolor, eget fusce in aliquet vulputate, donec elit nibh.</p>
+						<p>Erat a porttitor per, egestas donec adipiscing eu adipiscing lorem adipiscing, lobortis tellus donec quis. Nec morbi eu at, bibendum a. Mi dolor commodo turpis orci leo.</p>
+					</div>
 					<div class="quotes__pages">
 					</div>
                     <div class="quotes__dots">
@@ -217,7 +272,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="contact shadow baron">
+			<div class="contact shadow baron fading">
 				<div class="width-60">
 					<h1>contact us</h1>
 					<form class="size-14">
@@ -230,7 +285,7 @@
 
 				</div>				
 			</div>
-			<div class="bottom shadow">
+			<div class="bottom shadow fading">
 				<div class="width-80-smaller">
 					<div class="bottom__additional inline-block">
 						<img class="social-net" src="images/icon_twitter.png" alt="twitter"/>
@@ -244,6 +299,40 @@
 		</div>
 	</div>
 
-
+	<div class="side__menu">
+		<div class="close">&times;</div>
+				<div class="side__menu__item">
+			<a href="#top" class="underline">Title</a>
+		</div>
+		<div class="side__menu__item">
+			<a href="#about" class="underline">About</a>
+		</div>
+		<div class="side__menu__item">
+			<a href="#works" class="underline">Works</a>
+		</div>
+		<div class="side__menu__item">
+			<a href="#development" class="underline">Development</a>
+		</div>
+		<div class="side__menu__item">
+			<a href="#skills" class="underline">Skills</a>
+		</div>
+		<div class="side__menu__item">
+			<a href="#mobile" class="underline">Mobile</a>
+		</div>
+				<div class="side__menu__item">
+			<a href="#news" class="underline">News</a>
+		</div>
+		<div class="side__menu__item">
+			<a href="#quotes" class="underline">Quotes</a>
+		</div>
+		<div class="side__menu__item">
+			<a href="#contact" class="underline">Contact us</a>
+		</div>
+		<div class="side__menu__item">
+			<a href="#bottom" class="underline">We in the social networks</a>
+		</div>
+	</div>
+	
+	<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
